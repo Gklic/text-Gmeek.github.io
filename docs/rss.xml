@@ -1,2 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gklic博客</title><link>https://Gklic.github.io/text-Gmeek.github.io</link><description>你相信什么，你就成为什么样的人。</description><copyright>Gklic博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/87595200?v=4</url><title>avatar</title><link>https://Gklic.github.io/text-Gmeek.github.io</link></image><lastBuildDate>Fri, 21 Jun 2024 02:05:50 +0000</lastBuildDate><managingEditor>Gklic博客</managingEditor><ttl>60</ttl><webMaster>Gklic博客</webMaster><item><title>测试</title><link>https://Gklic.github.io/text-Gmeek.github.io/post/ce-shi.html</link><description>Hello Word。</description><guid isPermaLink="true">https://Gklic.github.io/text-Gmeek.github.io/post/ce-shi.html</guid><pubDate>Fri, 21 Jun 2024 02:01:08 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Gklic博客</title><link>https://Gklic.github.io/text-Gmeek.github.io</link><description>你相信什么，你就成为什么样的人。</description><copyright>Gklic博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/87595200?v=4</url><title>avatar</title><link>https://Gklic.github.io/text-Gmeek.github.io</link></image><lastBuildDate>Fri, 21 Jun 2024 02:12:35 +0000</lastBuildDate><managingEditor>Gklic博客</managingEditor><ttl>60</ttl><webMaster>Gklic博客</webMaster><item><title>AdGuard Home</title><link>https://Gklic.github.io/text-Gmeek.github.io/post/AdGuard%20Home.html</link><description>#禁用systemd-resolved&#13;
+53端口是DNS默认端口，正常情况不建议更改，否则配置DNS时地址为 ip+端口，比较麻烦&#13;
+systemd-resolved 占用了53端口，需禁用[1]&#13;
+&#13;
+# 停用服务&#13;
+`systemctl stop systemd-resolved`&#13;
+# 使用Vim编辑配置文件&#13;
+`vi /etc/systemd/resolved.conf`&#13;
+# 接下来，按下 i （进入编辑模式），用键盘上的方向键控制光标，把# DNSStubListener=yes前面的#去掉，然后把yes改为no&#13;
+# 按下 esc 输入 :wq 回车即可（保存并退出）&#13;
+# 运行下方命令&#13;
+`ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf`&#13;
+&#13;
+#AdGuardHome一键部署&#13;
+&#13;
+`curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`&#13;
+&#13;
+#或者通过wget下载程序主文件并解压&#13;
+`wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz&#13;
+`&#13;
+`tar xvf AdGuardHome_linux_amd64.tar.gz`&#13;
+#解压完成后，进入解压出来的目录。</description><guid isPermaLink="true">https://Gklic.github.io/text-Gmeek.github.io/post/AdGuard%20Home.html</guid><pubDate>Fri, 21 Jun 2024 02:12:11 +0000</pubDate></item><item><title>测试</title><link>https://Gklic.github.io/text-Gmeek.github.io/post/ce-shi.html</link><description>Hello Word。</description><guid isPermaLink="true">https://Gklic.github.io/text-Gmeek.github.io/post/ce-shi.html</guid><pubDate>Fri, 21 Jun 2024 02:01:08 +0000</pubDate></item></channel></rss>
